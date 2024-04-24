@@ -15,5 +15,5 @@ public class FetchDataPage : BasePage
     public override IPage Page { get; set; }
 
     public Task<bool> WeatherForcastIsVisible() =>
-        Page.Locator("text=Weater forecast").IsVisibleAsync();
+        Page.Locator("text=Weather forecast").IsVisibleAsync();
 }
