@@ -11,3 +11,9 @@ Scenario: User cannot log in with invalid credentials
     Given a logged out user
     When the user logs in with invalid credentials
     Then an error is displayed
+
+    # Scenario: User can register
+    # Given a logged out user
+    # When the user registers
+    # Then they register successfully
+
