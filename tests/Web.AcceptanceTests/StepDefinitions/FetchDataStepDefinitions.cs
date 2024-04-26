@@ -54,10 +54,15 @@ public sealed class FetchDataStepDefinitions
         await _loginPage.GotoAsync();
     }
 
+    [When("the user fetches data from the fetch-data page")]
+    public async Task WhenTheUserNavigatesToTheFetchDataPage()
+    {
+        await _fetchDataPage.GotoAsync();
+    }
+
     [Then("weather forecast is visible")]
     public async Task WeatherForcastIsVisible()
     {
-        await _fetchDataPage.GotoAsync();
         var weatherForcastIsVisible = await _fetchDataPage.WeatherForcastIsVisible();
         weatherForcastIsVisible.Should().BeTrue();
     }
@@ -65,7 +70,6 @@ public sealed class FetchDataStepDefinitions
     [Then("weather forecast is not visible")]
     public async Task WeatherForcastIsNotVisible()
     {
-        await _fetchDataPage.GotoAsync();
         var weatherForcastIsVisible = await _fetchDataPage.WeatherForcastIsVisible();
         weatherForcastIsVisible.Should().BeFalse();
     }
