@@ -24,6 +24,12 @@ export class Home extends Component {
             <a href="http://getbootstrap.com/">Bootstrap</a> for layout and
             styling
           </li>
+          <li>
+            <a href="https://playwright.dev/dotnet/docs/api/class-playwright">
+              playwright
+            </a>
+            for end-to-end testing
+          </li>
         </ul>
         <p>To help you get started, we have also set up:</p>
         <ul>

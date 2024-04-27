@@ -19,6 +19,9 @@ public sealed class FetchDataStepDefinitions
 
         var options = new BrowserTypeLaunchOptions();
 
+        await plywright.Chromium
+
+
         // can change browser to Firefox or WebKit
         var browser = await playwright.Chromium.LaunchAsync(options);
 
